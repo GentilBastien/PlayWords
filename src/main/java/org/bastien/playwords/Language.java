@@ -1,5 +1,7 @@
 package org.bastien.playwords;
 
+import org.bastien.playwords.dictionaries.AbstractDictionary;
+
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -7,10 +9,6 @@ import java.util.stream.Collectors;
 public class Language {
 
     private static AbstractDictionary dictionary;
-
-    static {
-        loadDictionary(FrenchDictionary.class);
-    }
 
     public static SortedSet<String> printDictionary() {
         return findWordsWith(w -> true);
@@ -78,8 +76,10 @@ public class Language {
     public static void loadDictionary(Class<? extends AbstractDictionary> dictionaryClass) {
         try {
             dictionary = dictionaryClass.getDeclaredConstructor().newInstance();
+            System.out.println(Main.ANSI_GREEN + "Dictionary " + dictionaryClass.getSimpleName() + " loaded successfully!" + Main.ANSI_RESET);
         } catch (ReflectiveOperationException e) {
-            System.out.println("Could not load " + dictionaryClass + " dictionary.");
+            System.out.println("Could not instantiate " + dictionaryClass.getSimpleName() + " dictionary.");
+            e.printStackTrace();
         }
     }
 
