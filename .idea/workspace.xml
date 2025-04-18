@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bde3379f-5a26-490f-9bcd-422df9d94452" name="Changes" comment="Lexical tree and new dictionaries">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/WordFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/AlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/BlankLineException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/Dictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/GermanDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/SpanishDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/en.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/es.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/AbstractDictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/EnglishDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/EnglishDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/FrenchDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/FrenchDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary_en.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary_fr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/de.txt" afterDir="false" />
-    </list>
+    <list default="true" id="bde3379f-5a26-490f-9bcd-422df9d94452" name="Changes" comment="Lexical tree and new dictionaries" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +23,7 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -108,7 +92,7 @@
       <workItem from="1691590245695" duration="75000" />
       <workItem from="1744449336663" duration="2196000" />
       <workItem from="1744996557265" duration="11593000" />
-      <workItem from="1745009372748" duration="105000" />
+      <workItem from="1745009372748" duration="468000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1683573117537</created>
@@ -131,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1683661725537</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Lexical tree and new dictionaries">
+      <option name="closed" value="true" />
+      <created>1745009793697</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745009793697</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
