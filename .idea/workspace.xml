@@ -92,7 +92,7 @@
       <workItem from="1691590245695" duration="75000" />
       <workItem from="1744449336663" duration="2196000" />
       <workItem from="1744996557265" duration="11593000" />
-      <workItem from="1745009372748" duration="468000" />
+      <workItem from="1745009372748" duration="607000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1683573117537</created>
@@ -123,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745009793697</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lexical tree and new dictionaries">
+      <option name="closed" value="true" />
+      <created>1745009972191</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745009972191</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
