@@ -4,19 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bde3379f-5a26-490f-9bcd-422df9d94452" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/EnglishDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/lexicaltree/AbstractNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/lexicaltree/EmptyNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/lexicaltree/LeafNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/lexicaltree/LexicalTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/lexicaltree/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary_en.txt" afterDir="false" />
+    <list default="true" id="bde3379f-5a26-490f-9bcd-422df9d94452" name="Changes" comment="Lexical tree and new dictionaries">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/WordFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/AlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/BlankLineException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/GermanDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/SpanishDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/en.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/es.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/AbstractDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/AbstractDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/FrenchDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/FrenchDictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/Language.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/AbstractDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/EnglishDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/EnglishDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/FrenchDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bastien/playwords/dictionaries/FrenchDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary_en.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary_fr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/de.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +34,9 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +44,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2PWVhf0dCVD9UYhP5QxBhKk8SbD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,10 +66,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/CombatLogParser&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -77,7 +95,20 @@
       <updated>1683572944846</updated>
       <workItem from="1683572946132" duration="1089000" />
       <workItem from="1683574051352" duration="177000" />
-      <workItem from="1683651243917" duration="9586000" />
+      <workItem from="1683651243917" duration="10040000" />
+      <workItem from="1683879272459" duration="11916000" />
+      <workItem from="1683966934831" duration="653000" />
+      <workItem from="1688148949796" duration="1555000" />
+      <workItem from="1688326654294" duration="693000" />
+      <workItem from="1690745425652" duration="1423000" />
+      <workItem from="1690910759938" duration="544000" />
+      <workItem from="1691139332952" duration="293000" />
+      <workItem from="1691139641422" duration="148000" />
+      <workItem from="1691330877652" duration="1198000" />
+      <workItem from="1691590245695" duration="75000" />
+      <workItem from="1744449336663" duration="2196000" />
+      <workItem from="1744996557265" duration="11593000" />
+      <workItem from="1745009372748" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1683573117537</created>
@@ -93,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683573714584</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lexical tree and new dictionaries">
+      <created>1683661725537</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683661725537</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +163,11 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="Lexical tree and new dictionaries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lexical tree and new dictionaries" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

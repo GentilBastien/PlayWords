@@ -1,6 +1,7 @@
 package org.bastien.playwords;
 
-import org.bastien.playwords.dictionaries.EnglishDictionary;
+import org.bastien.playwords.dictionaries.Dictionary;
+import org.bastien.playwords.dictionaries.FrenchDictionary;
 
 public class Main {
     public static final String ANSI_RESET = "\u001B[0m";
@@ -13,12 +14,10 @@ public class Main {
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_WHITE = "\u001B[37m";
 
-
     public static void main(String[] args) {
-        Language.loadDictionary(EnglishDictionary.class);
-        Language.findWordsWith(w -> w.length() >= 30);
-
-//        long start = System.currentTimeMillis();
-//        System.out.println(System.currentTimeMillis() - start);
+        Dictionary.load(FrenchDictionary.class);
+        WordFinder finder = Dictionary.use().wordFinder();
+        String res = finder.size(10).startsWith("tr").endsWith("er").hasCharacter('v').hasNoCharacter('i').print();
+        System.out.println(res);
     }
 }

@@ -1,8 +1,8 @@
 package org.bastien.playwords.dictionaries;
 
-public class EnglishDictionary extends AbstractDictionary {
+public class EnglishDictionary extends Dictionary {
 
-    public EnglishDictionary() {
-        super("dictionary_en");
+    EnglishDictionary() throws Exception {
+        super("en");
     }
 }
