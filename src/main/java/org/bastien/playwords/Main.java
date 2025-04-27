@@ -17,7 +17,19 @@ public class Main {
     public static void main(String[] args) {
         Dictionary.load(FrenchDictionary.class);
         WordFinder finder = Dictionary.use().wordFinder();
-        String res = finder.size(10).startsWith("tr").endsWith("er").hasCharacter('v').hasNoCharacter('i').print();
+        String res = finder.size(8)
+                           .startsWith("déc")
+                           .endsWith("e")
+                           .hasCharacter('c')
+                           .hasCharacter('a')
+                           .hasNoCharacter('i')
+                           .hasNoCharacter('n')
+                           .hasNoCharacter('u')
+                           .hasNoCharacter('l')
+                           .hasNoCharacter('p')
+                           .hasNoCharacter('o')
+                           .hasNoCharacter('t')
+                           .print();
         System.out.println(res);
     }
 }
